@@ -6,7 +6,10 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("What's your name: ");
+            var name = Console.ReadLine();
+            var message = logic.HelloWorld.GetMessage(name);
+            Console.WriteLine(message);
         }
     }
 }
